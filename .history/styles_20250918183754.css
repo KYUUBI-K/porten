@@ -625,7 +625,6 @@ a {
   width: 210px;
   background: rgba(255, 255, 255, 0.4);
   padding: 14px 20px;
-  border: none;
 }
 input::placeholder {
   color: var(--color-gray);
@@ -638,7 +637,7 @@ input::placeholder {
   font-family: var(--font-family-base);
   line-height: 150%;
   letter-spacing: 0.7px;
-  border: none;
+    border: none;
 }
 
 .footer-bot {
@@ -657,7 +656,6 @@ input::placeholder {
   text-decoration-skip-ink: none;
   text-decoration-thickness: auto;
   text-underline-offset: auto;
-  
 }
 
 @media (max-width: 1900px) {
@@ -740,7 +738,7 @@ input::placeholder {
   }
   .partners-images {
     flex-wrap: wrap;
-    padding: 10px
+    padding: 10px, 0;
   }
 
   .footer-top-content {

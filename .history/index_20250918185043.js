@@ -12,10 +12,10 @@ const nextBtn = document.querySelector(".next");
 const items = document.querySelectorAll(".product");
 
 let index = 0;
-let slideWidth = items[0].offsetWidth;
+let slideWidth = items[0].offsetWidth; // ширина одного слайда
 
 function updateSlideWidth() {
-  slideWidth = items[0].offsetWidth;
+  slideWidth = items[0].offsetWidth; // перераховуємо при зміні розміру вікна
 }
 
 function showSlide(i) {
@@ -32,6 +32,7 @@ function enableSlider() {
   products.style.transform = "translateX(0)";
 }
 
+// при ресайзі перераховуємо ширину і не даємо «стрибати»
 window.addEventListener("resize", () => {
   updateSlideWidth();
   showSlide(index);
@@ -48,10 +49,10 @@ const newNextBtn = document.querySelector(".slider-btn.next");
 const newItems = document.querySelectorAll(".new-products li");
 
 let newIndex = 0;
-let slideWidths = newItems[0].offsetWidth;
+let slideWidth = newItems[0].offsetWidth; // ширина одного слайда
 
 function updateSlideWidth() {
-  slideWidth = newItems[0].offsetWidth;
+  slideWidth = newItems[0].offsetWidth; // оновлюємо при зміні екрану
 }
 
 function showNewSlide(i) {
@@ -68,6 +69,7 @@ function enableNewSlider() {
   newProducts.style.transform = "translateX(0)";
 }
 
+// слідкуємо за зміною екрану
 window.addEventListener("resize", () => {
   updateSlideWidth();
   showNewSlide(newIndex);
