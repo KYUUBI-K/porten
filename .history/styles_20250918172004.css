@@ -300,7 +300,7 @@ a {
   font-size: 16px;
   font-weight: 700;
 }
-.slider button, .slider-container button {
+.slider button {
   display: none;
 }
 
@@ -764,60 +764,9 @@ input::placeholder {
   .collection-text {
     max-width: 300px;
   }
-
-
-
-
-.slider-container {
-    position: relative;
-    overflow: hidden;
+  .new-products {
+    padding: 10px;
   }
-
-
-  .slider-container button{
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #222;
-    color: #fff;
-    border: none;
-    font-size: 30px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-
-   .slider-btn.prev {
-    left: 10px;
-  }
-
-  .slider-btn.next {
-    right: 10px;
-  }
-
-
-.new-products {
-   flex-wrap: nowrap;
-   gap: 0;
-   justify-content: flex-start;
-   text-align: center;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-  
-  .new-product,
-  .new-product-gucci,
-  .all-product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    align-items: center;
-  }
-
 
   .article img {
     max-width: 400px;
@@ -879,22 +828,17 @@ input::placeholder {
     width: 100%;
   }
 
-
   .products {
-    text-align: center;
     display: flex;
     justify-content: flex-start;
     transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
   }
 
   .product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
+    min-width: 100%; /* одна картка на всю ширину */
   }
 
+  /* Кнопки показуємо тільки на мобільному */
   .slider button {
     display: block;
     position: absolute;
@@ -918,6 +862,25 @@ input::placeholder {
 }
 
 
+
+
+
+
+ 
+
+
+
+
+
+
+  .new-product img,
+  .new-product-gucci img,
+  .all-product {
+    max-width: 200px;
+  }
+  .all-product {
+    max-height: 234px;
+  }
   .article {
     flex-direction: column;
     align-items: center;

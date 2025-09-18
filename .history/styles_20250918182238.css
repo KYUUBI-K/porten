@@ -918,6 +918,25 @@ input::placeholder {
 }
 
 
+
+
+
+
+ 
+
+
+
+
+
+
+  .new-product img,
+  .new-product-gucci img,
+  .all-product {
+    max-width: 200px;
+  }
+  .all-product {
+    max-height: 234px;
+  }
   .article {
     flex-direction: column;
     align-items: center;

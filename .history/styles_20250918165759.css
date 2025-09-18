@@ -300,9 +300,6 @@ a {
   font-size: 16px;
   font-weight: 700;
 }
-.slider button, .slider-container button {
-  display: none;
-}
 
 .catalog {
   flex: 1;
@@ -714,7 +711,10 @@ input::placeholder {
     padding: 15px;
   }
 
-
+  .products {
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
 
   .collection-text {
     max-width: 400px;
@@ -764,60 +764,9 @@ input::placeholder {
   .collection-text {
     max-width: 300px;
   }
-
-
-
-
-.slider-container {
-    position: relative;
-    overflow: hidden;
+  .new-products {
+    padding: 10px;
   }
-
-
-  .slider-container button{
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #222;
-    color: #fff;
-    border: none;
-    font-size: 30px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-
-   .slider-btn.prev {
-    left: 10px;
-  }
-
-  .slider-btn.next {
-    right: 10px;
-  }
-
-
-.new-products {
-   flex-wrap: nowrap;
-   gap: 0;
-   justify-content: flex-start;
-   text-align: center;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-  
-  .new-product,
-  .new-product-gucci,
-  .all-product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    align-items: center;
-  }
-
 
   .article img {
     max-width: 400px;
@@ -859,10 +808,6 @@ input::placeholder {
   .burger {
     display: flex;
   }
-  .burger.active {
-    position: fixed;
-    align-self: flex-end;
-  }
   .bot-line-content {
     padding: 10px;
     gap: 40px;
@@ -873,51 +818,14 @@ input::placeholder {
   .product img {
     max-width: 200px;
   }
- .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
+  .new-product img,
+  .new-product-gucci img,
+  .all-product {
+    max-width: 200px;
   }
-
-
-  .products {
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
+  .all-product {
+    max-height: 234px;
   }
-
-  .product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-  }
-
-  .slider button {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #222;
-    color: #fff;
-    border: none;
-    font-size: 30px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
-  }
-}
-
-
   .article {
     flex-direction: column;
     align-items: center;

@@ -776,23 +776,17 @@ input::placeholder {
 
   .slider-container button{
     display: block;
-    position: absolute;
+   position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #222;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     border: none;
-    font-size: 30px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     cursor: pointer;
-  }
-
-   .slider-btn.prev {
-    left: 10px;
-  }
-
-  .slider-btn.next {
-    right: 10px;
+    font-size: 24px;
+    border-radius: 50%;
   }
 
 
@@ -801,10 +795,6 @@ input::placeholder {
    gap: 0;
    justify-content: flex-start;
    text-align: center;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
   }
   
   .new-product,
@@ -812,10 +802,6 @@ input::placeholder {
   .all-product {
     flex: 0 0 100%;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    align-items: center;
   }
 
 
@@ -918,6 +904,25 @@ input::placeholder {
 }
 
 
+
+
+
+
+ 
+
+
+
+
+
+
+  .new-product img,
+  .new-product-gucci img,
+  .all-product {
+    max-width: 200px;
+  }
+  .all-product {
+    max-height: 234px;
+  }
   .article {
     flex-direction: column;
     align-items: center;

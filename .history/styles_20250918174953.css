@@ -764,17 +764,12 @@ input::placeholder {
   .collection-text {
     max-width: 300px;
   }
-
-
-
-
-.slider-container {
-    position: relative;
-    overflow: hidden;
+  .new-products {
+    padding: 10px;
   }
 
 
-  .slider-container button{
+/* .slider-container button {
     display: block;
     position: absolute;
     top: 50%;
@@ -785,38 +780,37 @@ input::placeholder {
     font-size: 30px;
     padding: 8px 12px;
     cursor: pointer;
+  } */
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
   }
 
-   .slider-btn.prev {
-    left: 10px;
+.slider-btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+  }
+
+  .slider-btn.prev {
+    left: 5px;
   }
 
   .slider-btn.next {
-    right: 10px;
+    right: 5px;
   }
+}
 
-
-.new-products {
-   flex-wrap: nowrap;
-   gap: 0;
-   justify-content: flex-start;
-   text-align: center;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-  
-  .new-product,
-  .new-product-gucci,
-  .all-product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    gap: 0;
-    align-items: center;
-  }
 
 
   .article img {
@@ -918,6 +912,25 @@ input::placeholder {
 }
 
 
+
+
+
+
+ 
+
+
+
+
+
+
+  .new-product img,
+  .new-product-gucci img,
+  .all-product {
+    max-width: 200px;
+  }
+  .all-product {
+    max-height: 234px;
+  }
   .article {
     flex-direction: column;
     align-items: center;
