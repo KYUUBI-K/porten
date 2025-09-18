@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("./fonts/PTSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Post No Bills Jaffna";
+  src: url("./fonts/PostNoBillsJaffna-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-dark: #000000;
+  --color-light-dark: #0f0f0f;
+  --color-white: #ffffff;
+  --light-gray: #d0d0d0;
+  --color-gray: #969696;
+
+  --border: 1px solid var(--color-white);
+
+  --font-family-base: "PT Sans", sans-serif;
+  --font-family-accent: "Playfair Display", sans-serif;
+  --font-family-logo: "Post No Bills Jaffna", sans-serif;
+
+  --input-height: 47px;
+}
+
+body {
+  font-size: 14px;
+  font-family: var(--font-family-base);
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+
+.top-line-content {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  column-gap: 19px;
+}
+
+.bot-line {
+  background-color: var(--color-light-dark);
+}
+
+.bot-line-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 16px 0;
+}
+
+.header-menu {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  color: var(--color-gray);
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+.header-menu-list {
+  display: flex;
+  text-transform: uppercase;
+  gap: 35px;
+}
+.header-logo {
+  font-family: var(--font-family-logo);
+  font-size: 36px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  min-height: 810px;
+  background: linear-gradient(
+      0deg,
+      rgba(15, 15, 15, 0.5) 0%,
+      rgba(15, 15, 15, 0.5) 100%
+    ),
+    url(/images/Rectangle\ 3.png) lightgray 50% / cover no-repeat;
+}
+.banner-logo {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #fff;
+  padding: 93px 61px 94px 61px;
+  align-items: center;
+}
+.banner-title {
+  font-family: var(--font-family-logo);
+  font-size: 64px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.banner-subtitle {
+  font-family: var(--font-family-base);
+  font-size: 22px;
+}
+
+.banner-info {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+  padding: 80px 0 154px 0;
+  max-width: 730px;
+}
