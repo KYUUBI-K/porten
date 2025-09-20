@@ -951,13 +951,13 @@ input::placeholder {
     max-width: 150px;
   }
 
-  @media (max-width: 400px) {
-    .button-subscribe {
-      padding: 10px 10px;
-    }
+  @media (max-width: 350px) {
+  .button-subscribe{
+    padding: 10px 10px;
+  }
 
-    .subscribe input {
-      width: 140px;
-    }
+  .subscribe input {
+    width: 140px;
   }
 }
+
