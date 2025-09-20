@@ -385,7 +385,7 @@ a {
   width: 120px;
   height: 1px;
   background: white;
-  margin: 30px auto 40px auto;
+  margin: 40px auto 30px auto;
 }
 
 .collection-text {
@@ -586,7 +586,7 @@ a {
 }
 
 .footer-top-title {
-  padding-top: 85px;
+  padding-top: 90px;
   font-family: var(--font-family-accent);
   font-size: 24px;
   font-weight: 400;

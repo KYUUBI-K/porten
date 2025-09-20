@@ -280,6 +280,10 @@ a {
   gap: 50px;
   justify-content: center;
 }
+.product {
+  width: 260px;
+  height: 325px;
+}
 .product img {
   align-items: center;
   background: #191b1c;
@@ -385,7 +389,7 @@ a {
   width: 120px;
   height: 1px;
   background: white;
-  margin: 30px auto 40px auto;
+  margin: 40px auto 30px auto;
 }
 
 .collection-text {
@@ -550,7 +554,7 @@ a {
 }
 
 .partners {
-  margin-bottom: 106px;
+  margin-bottom: 100px;
 }
 .partners-title {
   font-family: var(--font-family-accent);
@@ -586,7 +590,7 @@ a {
 }
 
 .footer-top-title {
-  padding-top: 85px;
+  padding-top: 80px;
   font-family: var(--font-family-accent);
   font-size: 24px;
   font-weight: 400;
@@ -768,51 +772,6 @@ input::placeholder {
     max-width: 300px;
   }
 
-  .product img {
-    max-width: 200px;
-  }
-  .slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .products {
-    text-align: center;
-    display: flex;
-    justify-content: flex-start;
-    transition: transform 0.4s ease-in-out;
-    margin: 0;
-    padding: 0;
-    gap: 0;
-  }
-
-  .product {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-  }
-
-  .slider button {
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #222;
-    color: #fff;
-    border: none;
-    font-size: 30px;
-    padding: 8px 12px;
-    cursor: pointer;
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
-  }
-
   .slider-container {
     position: relative;
     overflow: hidden;
@@ -912,6 +871,50 @@ input::placeholder {
   .banner-info {
     max-width: 600px;
   }
+  .product img {
+    max-width: 200px;
+  }
+  .slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .products {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.4s ease-in-out;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
+
+  .product {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+  }
+
+  .slider button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #222;
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -953,8 +956,8 @@ input::placeholder {
   }
 
   @media (max-width: 400px) {
-    .info svg {
-      display: none;
+    .info {
+      column-gap: 10px;
     }
     .button-subscribe {
       padding: 10px 10px;
