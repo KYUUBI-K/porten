@@ -8,13 +8,11 @@ burger.addEventListener("click", () => {
   burger.classList.toggle("active");
 
   if (menu.classList.contains("active")) {
-    // Заблокувати скрол
     scrollPosition = window.scrollY;
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollPosition}px`;
-    document.body.style.width = "100%"; // щоб контент не стрибав
+    document.body.style.width = "100%";
   } else {
-    // Розблокувати скрол
     document.body.style.position = "";
     document.body.style.top = "";
     window.scrollTo(0, scrollPosition);
